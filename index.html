@@ -1,6 +1,3 @@
----
-layout: null
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -778,49 +775,49 @@ layout: null
           {/* Tabs for subsections */}
           <div className="flex border-b border-gray-600 mb-6 overflow-x-auto">
             <div 
-              className={`mr-6 pb-2 whitespace-nowrap cursor-pointer ${activeSubTab === 'org' ? 'border-b-2 border-blue-400 font-medium text-blue-400' : 'text-gray-400'}`}
-              onClick={() => setActiveSubTab('org')}
+              className={`mr-6 pb-2 whitespace-nowrap cursor-pointer ${activeSubTab === 'service' ? 'border-b-2 border-blue-400 font-medium text-blue-400' : 'text-gray-400'}`}
+              onClick={() => setActiveSubTab('service')}
             >
-              Org Chart & SDUs
+              Service Models
             </div>
             <div 
-              className={`mr-6 pb-2 whitespace-nowrap cursor-pointer ${activeSubTab === 'roles' ? 'border-b-2 border-blue-400 font-medium text-blue-400' : 'text-gray-400'}`}
-              onClick={() => setActiveSubTab('roles')}
+              className={`mr-6 pb-2 whitespace-nowrap cursor-pointer ${activeSubTab === 'environments' ? 'border-b-2 border-blue-400 font-medium text-blue-400' : 'text-gray-400'}`}
+              onClick={() => setActiveSubTab('environments')}
             >
-              Roles & Descriptions
+              Environments
             </div>
             <div 
-              className={`mr-6 pb-2 whitespace-nowrap cursor-pointer ${activeSubTab === 'onboarding' ? 'border-b-2 border-blue-400 font-medium text-blue-400' : 'text-gray-400'}`}
-              onClick={() => setActiveSubTab('onboarding')}
+              className={`mr-6 pb-2 whitespace-nowrap cursor-pointer ${activeSubTab === 'tools' ? 'border-b-2 border-blue-400 font-medium text-blue-400' : 'text-gray-400'}`}
+              onClick={() => setActiveSubTab('tools')}
             >
-              Onboarding Documents
+              Tools & Apps
             </div>
             <div 
-              className={`mr-6 pb-2 whitespace-nowrap cursor-pointer ${activeSubTab === 'building' ? 'border-b-2 border-blue-400 font-medium text-blue-400' : 'text-gray-400'}`}
-              onClick={() => setActiveSubTab('building')}
+              className={`mr-6 pb-2 whitespace-nowrap cursor-pointer ${activeSubTab === 'integration' ? 'border-b-2 border-blue-400 font-medium text-blue-400' : 'text-gray-400'}`}
+              onClick={() => setActiveSubTab('integration')}
             >
-              Building Teams
+              Solution Integration
             </div>
             <div 
-              className={`mr-6 pb-2 whitespace-nowrap cursor-pointer ${activeSubTab === 'training' ? 'border-b-2 border-blue-400 font-medium text-blue-400' : 'text-gray-400'}`}
-              onClick={() => setActiveSubTab('training')}
+              className={`mr-6 pb-2 whitespace-nowrap cursor-pointer ${activeSubTab === 'best' ? 'border-b-2 border-blue-400 font-medium text-blue-400' : 'text-gray-400'}`}
+              onClick={() => setActiveSubTab('best')}
             >
-              Training
+              Best Practices
             </div>
           </div>
           
           {/* Render the content for the active subtab */}
-          {activeSubTab === 'org' && <OrgChartSDUs />}
-          {activeSubTab === 'roles' && <RolesDescriptions />}
-          {activeSubTab === 'onboarding' && <OnboardingDocuments />}
-          {activeSubTab === 'building' && <BuildingTeams />}
-          {activeSubTab === 'training' && <Training />}
+          {activeSubTab === 'service' && <ServiceModels />}
+          {activeSubTab === 'environments' && <Environments />}
+          {activeSubTab === 'tools' && <ToolsApps />}
+          {activeSubTab === 'integration' && <SolutionIntegrationMetrics />}
+          {activeSubTab === 'best' && <BestPractices />}
           
           {/* Virtual Assistant Link */}
           <div className="bg-gray-700 text-white p-4 rounded-lg flex items-center justify-between">
             <div>
-              <h3 className="font-medium mb-1">Need help with teams or roles?</h3>
-              <p className="text-sm text-gray-300">Ask the Virtual Assistant about team structures, roles, or responsibilities</p>
+              <h3 className="font-medium mb-1">Need technical support?</h3>
+              <p className="text-sm text-gray-300">Ask the Virtual Assistant about environments, tools, or applications</p>
             </div>
             <div className="bg-blue-500 text-white py-2 px-4 rounded">
               <div className="flex items-center">
